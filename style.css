@@ -1,0 +1,51 @@
+body {
+  font-size: 50px;
+}
+
+.parent {
+  background: blue;
+  /* padding: 20px 10px 30px 0; */
+  padding: 10px;
+  height: 100vh;
+
+  /* flex */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-direction: row-reverse;  */
+}
+
+.parent > div {
+  background: rgb(18, 184, 34);
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+
+  /* flex */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent > div:nth-child(odd) {
+  background: red;
+}
+
+.item-4 {
+  align-self: flex-start;
+  order: -3;
+}
+
+.item-7 {
+  align-self: flex-start;
+  order: -3;
+}
+
+.item-8 {
+  align-self: flex-end;
+  order: -1;
+}
+.item-2 {
+  align-self: flex-start;
+  order: -1;
+}
